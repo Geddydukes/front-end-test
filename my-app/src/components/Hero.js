@@ -1,13 +1,11 @@
 import React from "react";
 
-
 const Header = () => {
   return (
-      <div className="heroContainer">
-      <button>
-        Button Button
-      </button>
-      </div>
+    <div className="heroContainer">
+      <header>Rooster Grin</header>
+      <button>Button Button</button>
+    </div>
   );
 };
 
