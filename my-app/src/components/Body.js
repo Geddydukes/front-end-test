@@ -5,10 +5,14 @@ const Body = () => {
     <div className="wholeBody">
       <div className="bodySectionOne">
         <div className="bodySectionOneText">
-          \ Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          facilis consequatur veritatis deserunt temporibus non ducimus officiis
-          repudiandae? A porro maiores soluta cumque voluptas! Adipisci minus
-          facere quod quos ut.
+          <header>LOREM IPSUM</header>
+          <p>
+            {" "}
+            Dolor sit amet consectetur adipisicing elit. Animi facilis
+            consequatur veritatis deserunt temporibus non ducimus officiis
+            repudiandae?
+          </p>
+          <a href="https://www.roostergrin.com/"> {">"} Lorem Ipsum</a>
         </div>
         <div className="bodySectionOneImage"></div>
       </div>

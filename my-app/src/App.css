@@ -51,7 +51,7 @@
 }
 
 .heroWelcome {
-  margin: 0;
+  margin: 1vh 0;
   -webkit-text-stroke: 3px white;
   -webkit-text-fill-color: transparent;
   font-size: 7vw;
@@ -60,30 +60,30 @@
 
 .heroButton {
   background-color: blueviolet;
-  height: 6vh;
-  width: 9vw;
+  min-height: 4vh;
+  width: 18vw;
   color: antiquewhite;
   border: none;
-  font-size: medium;
-  font-weight: 900;
+
+  margin-top: 4vh;
 }
 
 .bodySectionOne {
   height: 45vh;
-  background-color: aqua;
   /* width: 50%; */
   margin-right: 0px;
 }
 
 .bodySectionOneText {
   height: 45vh;
-  background-color: aqua;
   text-align: left;
   /* width: 50%; */
   float: left;
   position: absolute;
   margin-left: 12vw;
-  margin-right: 50vw;
+  margin-right: 55vw;
+  margin-top: 8%;
+  font-size: small;
 }
 
 .bodySectionOneImage {
@@ -99,7 +99,11 @@
 
 .bodySectionTwo {
   height: 45vh;
-  background-color: green;
+  background-image: url(./front-end-dev-test-assets/banner-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 .bodySectionThree {
   height: 45vh;
@@ -108,7 +112,13 @@
 .bodySectionFour {
   height: 45vh;
   background-color: gray;
+  background-image: url(./front-end-dev-test-assets/banner-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
+
 .bodySectionFive {
   height: 45vh;
   background-color: aqua;
