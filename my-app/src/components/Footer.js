@@ -7,14 +7,22 @@ const Footer = () => {
     <nav className="footerNavBar">
       <div className="socialLinksFooter">
         <p>Follow Us</p>
-        <a href="https://www.facebook.com/gdukes707" target="blank">
+        <a
+          href="https://www.facebook.com/RoosterGrin/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src={facebook}
             alt="Facebook Logo"
             className="socialImages"
           ></img>
         </a>
-        <a href="https://www.instagram.com/geddydukes/" target="blank">
+        <a
+          href="https://www.instagram.com/geddydukes/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src={instagram}
             alt="instagram Logo"
