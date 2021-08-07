@@ -5,19 +5,29 @@ const Body = () => {
     <div className="wholeBody">
       <div className="bodySectionOne">
         <div className="bodySectionOneText">
-          <header>LOREM IPSUM</header>
+          <header className="bodyHeaderOne">LOREM IPSUM</header>
           <p>
             {" "}
             Dolor sit amet consectetur adipisicing elit. Animi facilis
             consequatur veritatis deserunt temporibus non ducimus officiis
-            repudiandae?
+            repudiandae? Quisquam adipisci.
           </p>
-          <a href="https://www.roostergrin.com/"> {">"} Lorem Ipsum</a>
+          <a
+            href="https://www.roostergrin.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            {">"} Lorem Ipsum
+          </a>
         </div>
         <div className="bodySectionOneImage"></div>
       </div>
       <div className="bodySectionTwo">
-        lorem ipsum <button>Button Button</button>
+        <div className="bodySectionTwoText">
+          <header className="bodyHeaderOne">LOREM IPSUM</header>{" "}
+          <button className="bodyButton">Button Button</button>
+        </div>
       </div>
       <div className="bodySectionThree">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -26,10 +36,16 @@ const Body = () => {
         Dignissimos, amet facere.
       </div>
       <div className="bodySectionFour">
-        <header>LOREM IPSUM</header>Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. In numquam mollitia atque consequatur vero. Quo, minus
-        tempora in porro illo inventore, nam quos provident veritatis cupiditate
-        aliquid beatae nesciunt veniam. <button>Button Button</button>
+        <div className="bodySectionFourText">
+          <header>LOREM IPSUM</header>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In numquam
+            mollitia atque consequatur vero. Quo, minus tempora in porro illo
+            inventore, nam quos provident veritatis cupiditate aliquid beatae
+            nesciunt veniam.{" "}
+          </p>
+          <button className="bodyButton">Button Button</button>
+        </div>
       </div>
       <div className="bodySectionFive">Lorem ipsum dolor sit amet</div>
     </div>
