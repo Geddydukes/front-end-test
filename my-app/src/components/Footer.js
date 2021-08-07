@@ -4,13 +4,22 @@ import instagram from "../front-end-dev-test-assets/instagram.svg";
 
 const Footer = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-bottom">
+    <nav className="footerNavBar">
       <div className="socialLinksFooter">
+        <p>Follow Us</p>
         <a href="https://www.facebook.com/gdukes707" target="blank">
-          <img src={facebook} alt="Facebook Logo"></img>
+          <img
+            src={facebook}
+            alt="Facebook Logo"
+            className="socialImages"
+          ></img>
         </a>
         <a href="https://www.instagram.com/geddydukes/" target="blank">
-          <img src={instagram} alt="instagram Logo"></img>
+          <img
+            src={instagram}
+            alt="instagram Logo"
+            className="socialImages"
+          ></img>
         </a>
       </div>
     </nav>

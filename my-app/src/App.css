@@ -113,3 +113,19 @@
   height: 45vh;
   background-color: aqua;
 }
+.socialLinksFooter {
+  align-items: center;
+  text-align: center;
+}
+
+.socialLinksFooter p {
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.socialImages {
+  height: 4vmax;
+  margin: 1.25vh 1vw 2.5vh;
+}
