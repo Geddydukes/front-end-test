@@ -4,10 +4,13 @@ const Body = () => {
   return (
     <div className="wholeBody">
       <div className="bodySectionOne">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis
-        consequatur veritatis deserunt temporibus non ducimus officiis
-        repudiandae? A porro maiores soluta cumque voluptas! Adipisci minus
-        facere quod quos ut.
+        <div className="bodySectionOneText">
+          \ Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+          facilis consequatur veritatis deserunt temporibus non ducimus officiis
+          repudiandae? A porro maiores soluta cumque voluptas! Adipisci minus
+          facere quod quos ut.
+        </div>
+        <div className="bodySectionOneImage"></div>
       </div>
       <div className="bodySectionTwo">
         lorem ipsum <button>Button Button</button>

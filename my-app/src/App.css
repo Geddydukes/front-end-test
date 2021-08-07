@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  margin: 0px;
+  padding: 0px;
 }
 
 .heroContainer {
@@ -8,18 +10,17 @@
   /* background: url(./front-end-dev-test-assets/hero.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-color: #464646;
-  text-align: center;
-  margin: auto;
-  object-fit: cover;
-  object-position: bottom; */
+  /* background-color: #464646; */
+  /* text-align: left; */
+  margin: 0;
+  font-size: 6vw;
 }
 
 .heroImage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./front-end-dev-test-assets/hero.jpg);
   background-size: cover;
-  height: 40vmax;
+  height: 50vmax;
   background-color: #464646;
   text-align: center;
   background-position: center;
@@ -34,34 +35,81 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heroHeader {
+  text-align: left;
+  margin-left: 10vw;
+  font-size: large;
+  color: antiquewhite;
+  padding-top: 2vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heroText {
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.heroWelcome {
+  margin: 0;
+  -webkit-text-stroke: 3px white;
+  -webkit-text-fill-color: transparent;
+  font-size: 7vw;
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroButton {
+  background-color: blueviolet;
+  height: 6vh;
+  width: 9vw;
+  color: antiquewhite;
+  border: none;
+  font-size: medium;
+  font-weight: 900;
+}
+
+.bodySectionOne {
+  height: 45vh;
+  background-color: aqua;
+  /* width: 50%; */
+  margin-right: 0px;
+}
+
+.bodySectionOneText {
+  height: 45vh;
+  background-color: aqua;
+  text-align: left;
+  /* width: 50%; */
+  float: left;
+  position: absolute;
+  margin-left: 12vw;
+  margin-right: 50vw;
+}
+
+.bodySectionOneImage {
+  height: 100%;
+  background-image: url(./front-end-dev-test-assets/img-1.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  float: right;
+  width: 50%;
+}
+
+.bodySectionTwo {
+  height: 45vh;
+  background-color: green;
+}
+.bodySectionThree {
+  height: 45vh;
+  background-color: red;
+}
+.bodySectionFour {
+  height: 45vh;
+  background-color: gray;
+}
+.bodySectionFive {
+  height: 45vh;
+  background-color: aqua;
 }
