@@ -2,7 +2,7 @@ import React from "react";
 
 const Icons = () => {
   return (
-    <div className="Icons">
+    <div className="iconsContainer">
       <a href="https://www.facebook.com/gdukes707" target="blank">
         <i class="fa fa-facebook" aria-hidden="true"></i>
       </a>

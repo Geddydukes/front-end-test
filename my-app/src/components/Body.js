@@ -1,4 +1,6 @@
 import React from "react";
+import Carosel from "./Carosel";
+import Icons from "./Icons";
 
 const Body = () => {
   return (
@@ -30,10 +32,24 @@ const Body = () => {
         </div>
       </div>
       <div className="bodySectionThree">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        adipisci quos tenetur recusandae quis fugiat exercitationem autem
-        nesciunt odit labore velit voluptatem, voluptates id fuga ratione cum.
-        Dignissimos, amet facere.
+        <div className="bodySectionThreeText">
+          <header className="bodyHeaderTwo">Lorem ipsum dolor sit amet</header>{" "}
+          <p>
+            {" "}
+            consectetur adipisicing elit. Quisquam adipisci quos tenetur
+            recusandae quis fugiat exercitationem autem nesciunt odit labore
+            velit voluptatem, voluptates id fuga ratione cum.{" "}
+          </p>
+          <a
+            href="https://www.roostergrin.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            {">"} Lorem Ipsum
+          </a>
+        </div>
+        <Icons />
       </div>
       <div className="bodySectionFour">
         <div className="bodySectionFourText">
@@ -41,13 +57,20 @@ const Body = () => {
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. In numquam
             mollitia atque consequatur vero. Quo, minus tempora in porro illo
-            inventore, nam quos provident veritatis cupiditate aliquid beatae
-            nesciunt veniam.{" "}
+            inventore,{" "}
           </p>
           <button className="bodyButton">Button Button</button>
         </div>
       </div>
-      <div className="bodySectionFive">Lorem ipsum dolor sit amet</div>
+      <div className="bodySectionFive">
+        {" "}
+        <div className="bodySectionFiveText">
+          <header className="bodyHeaderThree">
+            Lorem ipsum dolor sit amet
+          </header>
+        </div>
+        <Carosel />
+      </div>
     </div>
   );
 };
