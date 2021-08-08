@@ -180,7 +180,7 @@
 .bodySectionThree {
   height: 45vh;
   display: grid;
-  columns: 10vw 10;
+  columns: 11;
 }
 
 .bodySectionThreeText {
@@ -192,7 +192,7 @@
   margin-top: 10%;
   font-size: x-small;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 6;
 }
 
 .iconsContainer {
@@ -201,8 +201,8 @@
   position: relative;
   float: right;
   width: 100%;
-  grid-column-start: 6;
-  grid-column-end: 10;
+  grid-column-start: 8;
+  grid-column-end: 11;
   display: grid;
   columns: 4;
 }
@@ -247,6 +247,8 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  display: grid;
+  columns: 9;
 }
 
 .bodySectionFourText {
@@ -257,6 +259,7 @@
   margin-left: 55vw;
   margin-top: 8%;
   font-size: x-small;
+  grid-column-start: 6;
 }
 
 .bodySectionFourText header {
@@ -386,8 +389,14 @@
     position: absolute;
     margin-left: 10vw;
     margin-right: 55vw;
-    margin-top: 4%;
+    margin-top: 12%;
     font-size: large;
+  }
+  .bodyHeaderTwo {
+    font-size: xx-large;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 15px;
   }
   .bodyHeaderThree {
     font-size: xx-large;
@@ -401,21 +410,58 @@
   }
   .theReview bold {
     color: black;
-    font-size: medium;
+    font-size: x-large;
   }
   .theReview {
     padding-top: 10vh;
     color: black;
-    font-size: xx-small;
+    font-size: large;
     margin-bottom: 3vh;
     padding-bottom: 4vh;
   }
   .bodyButton {
     background-color: rgb(255, 86, 19);
-    min-height: 5vh;
-    width: 18vw;
+    min-height: 3vh;
+    width: 14vw;
     color: antiquewhite;
     border: none;
     margin-top: 8px;
+  }
+  .iconsContainer {
+    background-color: rgb(211, 211, 211);
+    height: 100%;
+    position: relative;
+    float: right;
+    width: 100%;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    display: grid;
+    columns: 4;
+  }
+
+  .bodyHeaderOne {
+    font-size: xx-large;
+    color: purple;
+    font-weight: 700;
+    grid-column-start: 1;
+  }
+  .bodySectionOneText {
+    text-align: left;
+    /* float: left; */
+    position: absolute;
+    margin-left: 10vw;
+    margin-right: 55vw;
+    margin-top: 14%;
+    font-size: large;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+  .bodySectionTwoText {
+    margin-top: 18%;
+    padding: 4px;
+  }
+  .bodySectionFourText {
+    margin-top: 22%;
   }
 }
