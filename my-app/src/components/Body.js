@@ -5,7 +5,7 @@ import Icons from "./Icons";
 const Body = () => {
   return (
     <div className="wholeBody">
-      <div className="bodySectionOne">
+      <div className="bodySection bodySectionOne">
         <div className="bodySectionOneText">
           <header className="bodyHeaderOne">LOREM IPSUM</header>
           <p>
@@ -25,13 +25,13 @@ const Body = () => {
         </div>
         <div className="bodySectionOneImage"></div>
       </div>
-      <div className="bodySectionTwo">
+      <div className="bodySection bodySectionTwo">
         <div className="bodySectionTwoText">
           <header className="bodyHeaderOne">LOREM IPSUM</header>{" "}
           <button className="bodyButton">Button Button</button>
         </div>
       </div>
-      <div className="bodySectionThree">
+      <div className="bodySection bodySectionThree">
         <div className="bodySectionThreeText">
           <header className="bodyHeaderTwo">LOREM IPSUM DOLAR SIT AMET</header>{" "}
           <p>
@@ -51,7 +51,7 @@ const Body = () => {
         </div>
         <Icons />
       </div>
-      <div className="bodySectionFour">
+      <div className="bodySection bodySectionFour">
         <div className="bodySectionFourText">
           <header>LOREM IPSUM</header>
           <p>
@@ -62,7 +62,7 @@ const Body = () => {
           <button className="bodyButton">Button Button</button>
         </div>
       </div>
-      <div className="bodySectionFive">
+      <div className="bodySection bodySectionFive">
         {" "}
         <div className="bodySectionFiveText">
           <header className="bodyHeaderThree">

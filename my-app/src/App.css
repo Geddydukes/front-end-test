@@ -447,11 +447,10 @@
   }
   .bodySectionOneText {
     text-align: left;
-    /* float: left; */
     position: absolute;
     margin-left: 10vw;
     margin-right: 55vw;
-    margin-top: 14%;
+    margin-top: 13%;
     font-size: large;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -463,5 +462,24 @@
   }
   .bodySectionFourText {
     margin-top: 22%;
+  }
+}
+
+@media only screen and (max-height: 550px) and (min-width: 600px) {
+  .bodySection {
+    height: 150vh;
+  }
+  .bodyHeaderTwo {
+    font-size: x-large;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .homeIcons {
+    height: 10vh;
+    border: black 2px solid;
+    border-radius: 45px;
+    padding: 5px;
+    margin: -5px;
   }
 }
