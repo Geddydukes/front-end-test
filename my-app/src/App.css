@@ -1,6 +1,15 @@
 .App {
   margin: 0px;
   padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App a {
+  text-decoration: none;
+}
+
+.App a:hover {
+  color: goldenrod;
 }
 
 .heroContainer {
@@ -19,6 +28,19 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  animation: fadeIn 2.5s;
+  -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .heroTextContainer {
@@ -48,7 +70,6 @@
   -webkit-text-stroke: 3px white;
   -webkit-text-fill-color: transparent;
   font-size: 7vw;
-  font-style: italic;
 }
 
 .heroButton {
@@ -57,14 +78,19 @@
   width: 18vw;
   color: antiquewhite;
   border: none;
-
   margin-top: 4vh;
+}
+
+.heroButton:hover {
+  transform: scale(1.1);
+  transition: 0.9s;
 }
 
 .bodyHeaderOne {
   font-size: x-large;
   color: purple;
   font-weight: 700;
+  grid-column-start: 1;
 }
 
 .bodyHeaderTwo {
@@ -72,6 +98,7 @@
   color: black;
   font-weight: 700;
   margin-bottom: 15px;
+  grid-row-start: 1;
 }
 
 .bodyHeaderThree {
@@ -90,19 +117,29 @@
   margin-top: 8px;
 }
 
+.bodyButton:hover {
+  transform: scale(1.2);
+  transition: ease 0.7s;
+}
+
 .bodySectionOne {
   height: 45vh;
   margin-right: 0px;
+  display: grid;
+  columns: 9;
 }
 
 .bodySectionOneText {
   text-align: left;
-  float: left;
+  /* float: left; */
   position: absolute;
   margin-left: 10vw;
   margin-right: 55vw;
-  margin-top: 15%;
+  margin-top: 6%;
   font-size: x-small;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
 }
 
 .bodySectionOneImage {
@@ -112,8 +149,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  float: right;
-  width: 50%;
+  /* float: right; */
+  width: 100%;
+  grid-column-start: 5;
+  grid-column-end: 9;
 }
 
 .bodySectionTwo {
@@ -122,7 +161,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+
+  display: grid;
 }
 
 .bodySectionTwoText {
@@ -132,12 +172,15 @@
   position: absolute;
   margin-left: 10vw;
   margin-right: 55vw;
-  margin-top: 18%;
+  margin-top: 6%;
   color: purple;
+  grid-column-start: 5;
 }
 
 .bodySectionThree {
   height: 45vh;
+  display: grid;
+  columns: 10vw 10;
 }
 
 .bodySectionThreeText {
@@ -148,14 +191,52 @@
   margin-right: 55vw;
   margin-top: 10%;
   font-size: x-small;
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
 .iconsContainer {
-  background-color: rebeccapurple;
+  background-color: rgb(211, 211, 211);
   height: 100%;
   position: relative;
   float: right;
-  width: 50%;
+  width: 100%;
+  grid-column-start: 6;
+  grid-column-end: 10;
+  display: grid;
+  columns: 4;
+}
+
+.homeIcons {
+  height: 6vh;
+  border: black 2px solid;
+  border-radius: 45px;
+  padding: 5px;
+}
+
+.homeIcons:hover {
+  border: goldenrod 2px solid;
+  border-radius: 45px;
+  transform: scale(1.25);
+  transition: ease-in-out 0.7s;
+}
+
+.homeIcons1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.homeIcons2 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+.homeIcons3 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.homeIcons4 {
+  grid-column-start: 3;
+  grid-row-start: 2;
 }
 
 .bodySectionFour {
@@ -196,6 +277,16 @@
   margin-top: 12vh;
 }
 
+.fiveStars {
+  color: orange;
+  font-size: 3.5vh;
+}
+
+.fiveStars:hover {
+  font-size: 4.5vh;
+  transition: 1s;
+}
+
 .caroselContainer {
   height: 100%;
   position: relative;
@@ -206,6 +297,7 @@
 .socialLinksFooter {
   align-items: center;
   text-align: center;
+  background-color: rgb(240, 240, 240);
 }
 
 .socialLinksFooter p {
@@ -213,7 +305,8 @@
   text-align: center;
   font-weight: 700;
   margin-bottom: 2px;
-  margin-top: 10px;
+  padding-top: 10px;
+  margin-top: 0;
 }
 
 .socialImages {
@@ -221,18 +314,108 @@
   margin: 1.25vh 1vw 2vh;
 }
 
+.socialImages:hover {
+  height: 5vmax;
+  margin: 0.75vh 1vw 1.5vh;
+  border: purple;
+  transition: 0.7s;
+}
+
 .reviewerName {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .theReview {
-  padding-top: 20px;
+  padding-top: 10vh;
   color: black;
-  font-size: small;
-  margin-bottom: 10vh;
+  font-size: x-small;
+  margin-bottom: 3vh;
+  padding-bottom: 4vh;
 }
 
 .theReview bold {
   color: black;
   font-size: large;
+}
+
+@media only screen and (max-width: 550px) {
+  .bodySectionThreeText {
+    text-align: left;
+    float: left;
+    position: absolute;
+    margin-left: 10vw;
+    margin-right: 55vw;
+    margin-top: 4%;
+    font-size: xx-small;
+  }
+  .bodyHeaderThree {
+    font-size: large;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .fiveStars {
+    color: orange;
+    font-size: 3vh;
+  }
+  .theReview bold {
+    color: black;
+    font-size: medium;
+  }
+  .theReview {
+    padding-top: 10vh;
+    color: black;
+    font-size: xx-small;
+    margin-bottom: 3vh;
+    padding-bottom: 4vh;
+  }
+  .bodyButton {
+    background-color: rgb(255, 86, 19);
+    min-height: 5vh;
+    width: 18vw;
+    color: antiquewhite;
+    border: none;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bodySectionThreeText {
+    text-align: left;
+    float: left;
+    position: absolute;
+    margin-left: 10vw;
+    margin-right: 55vw;
+    margin-top: 4%;
+    font-size: large;
+  }
+  .bodyHeaderThree {
+    font-size: xx-large;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .fiveStars {
+    color: orange;
+    font-size: 4vh;
+  }
+  .theReview bold {
+    color: black;
+    font-size: medium;
+  }
+  .theReview {
+    padding-top: 10vh;
+    color: black;
+    font-size: xx-small;
+    margin-bottom: 3vh;
+    padding-bottom: 4vh;
+  }
+  .bodyButton {
+    background-color: rgb(255, 86, 19);
+    min-height: 5vh;
+    width: 18vw;
+    color: antiquewhite;
+    border: none;
+    margin-top: 8px;
+  }
 }

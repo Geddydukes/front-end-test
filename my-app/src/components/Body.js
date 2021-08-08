@@ -33,7 +33,7 @@ const Body = () => {
       </div>
       <div className="bodySectionThree">
         <div className="bodySectionThreeText">
-          <header className="bodyHeaderTwo">Lorem ipsum dolor sit amet</header>{" "}
+          <header className="bodyHeaderTwo">LOREM IPSUM DOLAR SIT AMET</header>{" "}
           <p>
             {" "}
             consectetur adipisicing elit. Quisquam adipisci quos tenetur
@@ -66,8 +66,9 @@ const Body = () => {
         {" "}
         <div className="bodySectionFiveText">
           <header className="bodyHeaderThree">
-            Lorem ipsum dolor sit amet
+            LOREM IPSUM DOLAR SIT AMET
           </header>
+          <span className="fiveStars">★★★★★</span>
         </div>
         <Carosel />
       </div>
